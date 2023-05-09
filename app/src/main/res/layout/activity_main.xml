@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Display" />
+
+        <EditText
+            android:id="@+id/editTextInput"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="8"
+            android:ems="10"
+            android:hint="@string/enter"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        android:text="@string/show" />
+
+    <RadioGroup
+        android:id="@+id/Gender"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:checkedButton="@id/radioButtonGenderMale">
+
+        <RadioButton
+            android:id="@+id/radioButtonGenderMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/male" />
+
+        <RadioButton
+            android:id="@+id/radioButtonGenderFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/female" />
+    </RadioGroup>
+
+    <ToggleButton
+        android:id="@+id/toggleButtonEnabled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text=""
+        android:textOff="@string/disabled"
+        android:textOn="@string/enabled" />
+</LinearLayout>
+
+
